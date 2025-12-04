@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles": {
+      "http": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://**ENTER VM IP HERE WITH PORT**; http://*:**Match port with vm ip port** - This allows external access listens to all on local network",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Production"
+        },
+      },
+      "https": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://**ENTER VM IP HERE WITH PORT IF YOU WANT HTTPS, Otherwise delete this whole block (Not recommended even in local network)**",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Production"
+        }
+      },
+      
+    }
+  }

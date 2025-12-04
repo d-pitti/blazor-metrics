@@ -1,0 +1,45 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "pcmetrics": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "configuration":[
+        {
+          "name": "pcmetrics", 
+          "type": "coreclr",
+          "request": "launch",
+          "preLaunchTask": "build", 
+          "program": "ENTER FILE DESTINITION HERE INCLUDE THE DLL",
+          "args": [],
+          "cwd": "ENTER FILE DESTINITION HERE INCLUDE THE DLL",
+          "console": "integratedTerminal", 
+          "stopAtEntry": false
+        }
+      ]
+    
+    },
+     "http": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "http://**ADD YOUR IP ADDRESS HERE**:**Match the Port in applicationUrl for http(s)**",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Production"
+        },
+      },
+      "https": {
+        "commandName": "Project",
+        "dotnetRunMessages": true,
+        "launchBrowser": true,
+        "applicationUrl": "https://**ADD YOUR IP ADDRESS HERE**:**Match the Port in applicationUrl for http(s)**;http://**ADD YOUR IP ADDRESS HERE**:**Match the Port in applicationUrl for http(s)**",
+        "environmentVariables": {
+          "ASPNETCORE_ENVIRONMENT": "Production"
+        },
+      },
+  }
+}
+

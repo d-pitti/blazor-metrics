@@ -1,0 +1,19 @@
+#set up system service for blazor app to restart and run auto
+
+[Unit]
+Description=.Net Blazor Web App running Linux
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/blazorapp/publish
+ExecStart=/var/www/blazorapp/publish/BlazorMonitor
+Restart=on-failure
+#Restart service after 10 seconds if dotnet service crashes, adjust as needed
+RestartSec=10
+KillSignal=SIGINT
+SyslodIdentifier=dotnet-blazorApp
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+
+[Install]
+WantedBy=multi-user.target
