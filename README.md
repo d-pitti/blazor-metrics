@@ -28,7 +28,7 @@ I can now watch my PC metrics while I play video games, design 3D CAD models, de
 
 # To-Do:
 
-• Add Color range for storage data. 
-• Adust for media size on small devices. 
-• Potentially add more PC metrics features; Fan RPM, Frequencies, etc.
+• Add Color range for storage data.  
+• Adust for media size on small devices.   
+• Potentially add more PC metrics features; Fan RPM, Frequencies, etc.  
 
